@@ -6,7 +6,7 @@
   
     "description": "save links at savedbits",
    
-    "permissions" : ["activeTab"],
+    "permissions" : ["tabs", "activeTab"],
         
     
 
