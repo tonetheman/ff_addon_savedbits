@@ -1,10 +1,10 @@
 {
 
     "manifest_version": 2,
-    "name": "Borderify",
+    "name": "savedbits",
     "version": "1.0",
   
-    "description": "Adds a red border to all webpages matching mozilla.org.",
+    "description": "save links at savedbits",
    
     "permissions" : ["activeTab"],
         
@@ -12,7 +12,7 @@
 
     "browser_action": {
         "default_icon": "face.svg",
-        "default_title": "Beastify",
+        "default_title": "savedbits",
         "default_popup": "sb.html"
       }
   }
