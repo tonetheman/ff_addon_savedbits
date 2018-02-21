@@ -1,5 +1,9 @@
 
 (
+
+    // maybe load an iframe?
+
+    // old way
     function() {
         let c = browser.tabs.getCurrent();
         let title = browser.tabs.getCurrent().title;
