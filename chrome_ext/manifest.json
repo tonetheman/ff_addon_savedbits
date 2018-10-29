@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "savedbits",
+    "version": "1.1",
+  
+    "description": "save links at savedbits",
+   
+    "permissions" : ["tabs", "activeTab"],
+        
+    "icons" : {
+        "16" : "face.png",
+        "48" : "face.png",
+        "128" : "face.png"
+    },    
+
+    "browser_action": {
+        "default_icon": "face.svg",
+        "default_title": "savedbits",
+        "default_popup": "sb.html"
+      }
+  }

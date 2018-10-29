@@ -1,5 +1,10 @@
 
 
+
+2018-10-29
+separated out chrome into a different directory
+there is code in bm.js that is for both browsers still though
+
 submitted to amo
 https://addons.mozilla.org/en-US/developers
 to get a signed xpi
