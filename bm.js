@@ -26,9 +26,21 @@ function onGot(current) {
 
 }
 
-// get the current tab
-//let gettingCurrent = browser.tabs.getCurrent();
-let gettingCurrent = browser.tabs.query({active:true, currentWindow: true})
-gettingCurrent.then(onGot, onError);
+// chrome here
+if (chrome.tabs) {
+    chrome.tabs.query({active:true, currentWindow: true}, (a) => {
+        if (a) {
+            if (a.length) {
+                if (a.length==1) {
+                    onGot(a);
+                }
+            }
+        }
+    });
+} else {
+    // firefox here
+    let gettingCurrent = browser.tabs.query({active:true, currentWindow: true})
+    gettingCurrent.then(onGot, onError);
+}
 
 
